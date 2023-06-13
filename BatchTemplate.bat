@@ -39,6 +39,8 @@ goto :init
     set "__NAME=%~n0" 
     :: The name of the File with the extension .bat (%~nx0)
     set "__BAT_NAME=%~nx0"
+    :: The File path
+    set "__Directory=%~dp0"
 
     :: The Parsed Variables, First one if detected, Second one to store input
     set "FirstArgument="
